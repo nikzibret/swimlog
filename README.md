@@ -17,12 +17,20 @@ One lap is counted as 50 m (there and back in a 25 m pool).
 
 ## Stack
 
-- React and TypeScript, built with Lovable
+- React and TypeScript with TanStack Start, built with Lovable
+- Tailwind CSS
 - Supabase for Postgres, auth and row-level security
 - PWA manifest for home screen install
 
+## Run it yourself
+
+You need your own Supabase project. This repo contains no credentials.
+
+1. Install dependencies: `bun install` (or `npm install`)
+2. Copy `.env.example` to `.env` and fill in the URL and publishable key from your Supabase project
+3. Create the tables the app reads and writes: `sessions`, `sets`, `user_profile` and `weight_log` (column types are in `src/lib/swim-types.ts` and `src/lib/user-profile.ts`), and enable row-level security so each user only sees their own rows
+4. Start the dev server: `bun run dev`
+
 ## Status
 
-Personal project in active development. The source is not published yet: it is being cleaned of personal data and credentials first.
-
-Planned: Spotify integration, Oura Ring HRV overlay, and Apple Health via Capacitor.
+Personal project in active development. Planned: Spotify integration, Oura Ring HRV overlay, and Apple Health via Capacitor.
