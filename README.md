@@ -2,6 +2,16 @@
 
 A swim tracking app for the pool, built as a mobile-first PWA that can be added to the iOS home screen.
 
+## Screenshots
+
+<p>
+  <img src="docs/log.png" width="250" alt="Log tab: a session with sets, rest rows and live totals">
+  <img src="docs/calendar.png" width="250" alt="Calendar tab: days with logged sessions highlighted">
+  <img src="docs/dashboard.png" width="250" alt="Dashboard tab: personal records and pace over time">
+</p>
+
+Log a session (left), see which days you swam (middle), track records and pace over time (right).
+
 ## What it does
 
 - Log sessions and sets with stroke type, laps, equipment and rest periods
